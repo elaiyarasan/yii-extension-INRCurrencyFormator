@@ -20,7 +20,8 @@ Config - main.php
 	'currency_formator' => array(
 		'class' => 'ext.yii-extension-INRCurrencyFormator.INRCurrencyFormator',
 		'params' => array(
-			'postfix' => 'only'
+			'postfix'  => 'only',
+			'currency' => '₹'
 		)
 	),
 )
@@ -49,16 +50,22 @@ echo $converter->toWords('12345600');
 ```
 
 #### Currency symbol can be changed like this
+
+You can set in config for global configuration
+
 ```php
-$converter = new toIndianCurrency();
+$converter = Yii::app()->currency_formator;
 $converter->currency = '₹';
 echo $converter->toWords('12');
 // Twelve ₹ only
 ```
 
 #### Postfix text can be changed like this
+
+You can set in config for global configuration
+
 ```php
-$converter = new toIndianCurrency();
+$converter = Yii::app()->currency_formator;
 $converter->postfix = 'payable';
 echo $converter->toWords('12');
 // Twelve ₹ payable
@@ -66,7 +73,7 @@ echo $converter->toWords('12');
 
 #### Postfix text and currency can be disabled like this
 ```php
-$converter = new toIndianCurrency();
+$converter = Yii::app()->currency_formator;
 echo $converter->toWords('12','no_postfixtext');
 // Twelve
 ```
