@@ -92,3 +92,4 @@ MIT
 **Free Software, Yeah!**
 
 [Rakesh Kumar Shardiwal]:http://github.com/shardiwal
+[http://www.yiiframework.com/extension]:http://www.yiiframework.com/extension/currency-formator/
