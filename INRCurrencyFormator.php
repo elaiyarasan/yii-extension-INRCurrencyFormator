@@ -1,7 +1,7 @@
 <?php
 /** 
-*  Author: Rakesh Kumar Shardiwal
-*  Email : rakesh.shardiwal@gmail.com
+* @package INRCurrencyFormator
+* @author Rakesh Kumar Shardiwal <rakesh.shardiwal@gmail.com>
 *
 *  DESCRIPTION: 
 *  Converts a given number into words, based on Indian currency
